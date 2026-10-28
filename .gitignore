@@ -1,0 +1,37 @@
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Credentials and secrets
+.env.*
+!.env.example
+*token*
+secrets/
+credentials.json
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Datasets and large model files
+data/*
+!data/README.md
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.gguf
+models/
+checkpoints/
+
+# Experiment outputs and temporary files
+wandb/
+lightning_logs/
+runs/
+*.log
+.DS_Store
+Thumbs.db
