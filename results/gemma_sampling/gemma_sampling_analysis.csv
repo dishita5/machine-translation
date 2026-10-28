@@ -1,0 +1,4 @@
+Model,Decoding,Temperature,Top-p,Test Examples,BLEU,chrF,Inference Time (sec),Inference Time (sec/example),BLEU Difference vs Greedy,chrF Difference vs Greedy
+Gemma 2B IT,Greedy,0.0,,100,29.4521,53.3279,66.44,0.6644,0.0000,0.0000
+Gemma 2B IT,Sampling,0.7,0.9,100,24.7170,48.5303,65.66,0.6566,-4.7351,-4.7976
+Gemma 2B IT,Sampling,1.0,0.9,100,21.6606,45.8957,64.09,0.6409,-7.7915,-7.4322
