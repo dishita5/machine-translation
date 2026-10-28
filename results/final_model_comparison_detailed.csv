@@ -1,0 +1,6 @@
+Model	Architecture	Adaptation	BLEU	chrF	Training Time (min)	Inference Time (sec/1000)	Parameters	Decoding	Trainable Parameters
+Basic Transformer	Custom encoder-decoder Transformer	Trained from scratch	13.0148	6.1098	2.54	73.141	4783232	Greedy	
+mT5-small	Encoder-decoder Transformer	Full fine-tuning	1.5833	11.4274	26.89	124.4	300176768	Greedy	
+OPUS-MT	Marian encoder-decoder	Pretrained baseline; no fine-tuning	42.5432	64.8982	0	43.27	77943296	Beam search (4 beams)	
+TinyLlama 1.1B	Decoder-only Transformer	4-bit QLoRA	23.8893	48.2915	62.96	1150.44	1102301184	Greedy	2252800
+Gemma 2B IT	Decoder-only Transformer	4-bit QLoRA	29.4843	53.2853	51.92	656.92	2515978240	Greedy	9805824
