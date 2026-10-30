@@ -1,17 +1,18 @@
-
 # Python
 __pycache__/
 *.py[cod]
 .venv/
 venv/
-.env
+.python-version
 
 # Credentials and secrets
+.env
 .env.*
 !.env.example
-*token*
 secrets/
 credentials.json
+*.pem
+*.key
 
 # Jupyter
 .ipynb_checkpoints/
@@ -29,9 +30,14 @@ models/
 checkpoints/
 
 # Experiment outputs and temporary files
+.cache/
 wandb/
 lightning_logs/
 runs/
 *.log
+*.tmp
+*.swp
+
+# Operating system files
 .DS_Store
 Thumbs.db
