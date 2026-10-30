@@ -96,20 +96,34 @@ Translations should be reviewed by a qualified human when errors could have sign
 
 ## Repository Structure
 
-The repository will contain the project documentation, notebooks, source code where available, and selected evaluation results and visualizations.
+The repository currently contains the following files and directories:
 
 ```text
 machine-translation/
 ├── README.md
 ├── .gitignore
-├── requirements.txt
 ├── notebooks/
-├── src/
-├── data/
+│   ├── 00_Dataset_Preparation.ipynb
+│   ├── 01_Basic_Transformer.ipynb
+│   ├── 02-mt5-clean.ipynb
+│   ├── 03-llama-translation.ipynb
+│   ├── 04-gemma-translation last.ipynb
+│   └── 05-final-results-comparison.ipynb
 └── results/
+    ├── final_model_comparison_detailed.csv
+    ├── final_results_analysis.md
+    ├── comparison_bleu.png
+    ├── comparison_chrf.png
+    ├── comparison_training_time.png
+    ├── comparison_inference_time.png
+    ├── comparison_parameters.png
+    └── gemma_sampling/
+        ├── gemma_sampling_analysis.csv
+        ├── gemma_sampling_analysis.md
+        ├── gemma_sampling_bleu.png
+        ├── gemma_sampling_chrf.png
+        └── gemma_sampling_inference_time.png
 ```
-
-This describes the intended organization; files should be added as they are prepared and uploaded.
 
 ## Reproducibility
 
@@ -119,7 +133,7 @@ Do not commit access tokens, credentials, private data, or large model checkpoin
 
 ## Future Improvements
 
-- Add source notebooks and scripts for each model.
+- Add reusable source scripts and configuration files.
 - Include example translations and qualitative error analysis.
 - Evaluate additional test examples and repeat experiments to measure variability.
 - Add environment and dependency specifications.
