@@ -1,0 +1,14 @@
+{
+  "model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "method": "4-bit QLoRA",
+  "test_examples": 1000,
+  "bleu": 23.889302013513657,
+  "chrf": 48.29150704194105,
+  "training_time_minutes": 63.43,
+  "inference_time_seconds": 1150.44,
+  "seconds_per_example": 1.1504400000000001,
+  "trainable_parameters": 2252800,
+  "total_parameters": 1102301184,
+  "training_loss": 1.3399006774902344,
+  "validation_loss": 1.311869
+}
